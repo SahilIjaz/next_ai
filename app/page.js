@@ -32,18 +32,6 @@ export default function Home() {
   };
   return (
     <div className={styles.page}>
-      {/* <h1>Hello!</h1>
-      <div>
-        <textarea
-          value={message}
-          onChange={(e) => e.target.value}
-          rows={4}
-          placeholder="Enter your message ...."
-        />
-      </div>
-      <div>
-        <button>{loading ? "is Loading" : "chat"}</button>
-      </div> */}
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-pink-500 to-red-400 p-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -75,6 +63,10 @@ export default function Home() {
             >
               {loading ? "⏳ Loading..." : "💬 Chat"}
             </motion.button>
+          </div>
+          <div>
+            {response}
+         
           </div>
         </motion.div>
       </div>
